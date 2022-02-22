@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ADAM HIGA Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div id="logo"><a href="">ADAM</a></div>
+      
+      <div class="pc-menu">
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT ME</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- For smartphone -->
+      <div class="sp-menu">
+        <span class="material-icons" id="open">menu</span>
+      </div>
+    </header>
+
+    <div class="overlay">
+      <span class="material-icons" id="close">close</span>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- END OF HEADER -->
+
+    <!-- OBSERVER FOR HEADER -->
+    <div id="target"></div> 
+
+    <!-- HERO -->
+    <section id="hero">
+      <h2>Welcome<span></span></h2>
+      <h1>ADAM HIGA<span></span></h1>
+      <h2>PHOTOGRAPHY<span></span></h2>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h1 class="title">About me</h1>
+        <div class="about-card">
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis
+              repellendus beatae deserunt officiis, possimus ipsam vel tempore aliquid
+              illo nisi optio earum porro cum sint doloremque rerum quisquam dicta?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis
+              repellendus beatae deserunt officiis, possimus ipsam vel tempore aliquid
+              illo nisi optio earum porro cum sint dolo
+            </p>
+          </div>
+          <div>
+            <img src="images/me2.jpg"><br>
+            <small>※画像がイメージです</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h1 class="title">Gallery</h1>
+        <div id="main-photo">
+          <img src="images/pic01.jpg"></img>
+          <button id="prev" class="hidden">&lt;</button>
+          <button id="next">&gt;</button>
+        </div>
+        <ul class="thumbnails"></ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h1 class="title">Contact me</h1>
+        <div class="contact-card">
+          <img src="images/contact.jpeg">
+          <form action="https://formspree.io/f/mayvolzo" method="POST" id="my-form">
+            <div>
+              <label for="name">Name</label>
+              <input name="name" id="name" type="text">
+              <label for="email">Email</label>
+              <input name="email" id="email" type="text">
+            </div>
+            <div>
+              <label for="comment">Tell me</label>
+              <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+            </div>
+            <button>SEND</button>
+          </form>
+        </div>
+        <div id="status">Thank you!</div>
+      </div>
+    </section>
+
+    <footer>
+      <small>©2022 Adam Higa</small>
+    </footer>
+
+    <a href="#" id="to-top">⇧</a>
+
+    <script src="index.js"></script>
+  </body>
+</html>
