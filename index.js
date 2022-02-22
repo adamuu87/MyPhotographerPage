@@ -101,8 +101,27 @@ toTop.addEventListener("click", (e) => {
   });
 });
 
-// FORM
+// OBSERVERS FOR ANIMATIONS
+const inViewCallback = (entries, obs) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
 
+    entry.target.classList.add("appear");
+    obs.unobserve(entry.target);
+  });
+};
+
+const inViewObserver = new IntersectionObserver(inViewCallback, {
+  threshold: 0.2,
+});
+
+document.querySelectorAll(".animate").forEach((target) => {
+  inViewObserver.observe(target);
+});
+
+// FORM
 const form = document.getElementById("my-form");
 
 async function handleSubmit(event) {

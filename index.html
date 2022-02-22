@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icons/mainicon.png">
     <link rel="stylesheet" href="styles.css" />
     <title>ADAM HIGA Photography</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,9 +24,9 @@
         <nav>
           <ul>
             <li><a href="#">HOME</a></li>
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#gallery">GALLERY</a></li>
-            <li><a href="#contact">CONTACT ME</a></li>
+            <li><a href="#about"><span class="red">A</span>BOUT ME</a></li>
+            <li><a href="#gallery">G<span class="red">A</span>LLERY</a></li>
+            <li><a href="#contact">CONT<span class="red">A</span>CT ME</a></li>
           </ul>
         </nav>
       </div>
@@ -41,9 +42,9 @@
       <nav>
         <ul>
           <li><a href="#">HOME</a></li>
-          <li><a href="#about">ABOUT ME</a></li>
-          <li><a href="#gallery">GALLERY</a></li>
-          <li><a href="#contact">CONTACT ME</a></li>
+          <li><a href="#about"><span class="red">A</span>BOUT ME</a></li>
+          <li><a href="#gallery">G<span class="red">A</span>LLERY</a></li>
+          <li><a href="#contact">CONT<span class="red">A</span>CT ME</a></li>
         </ul>
       </nav>
     </div>
@@ -61,9 +62,9 @@
 
     <section id="about">
       <div class="container">
-        <h1 class="title">About me</h1>
+        <h1 class="title animate">About me</h1>
         <div class="about-card">
-          <div>
+          <div class="animate delay">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab facilis
               repellendus beatae deserunt officiis, possimus ipsam vel tempore aliquid
@@ -75,8 +76,8 @@
               illo nisi optio earum porro cum sint dolo
             </p>
           </div>
-          <div>
-            <img src="images/me2.jpg"><br>
+          <div class="animate">
+            <img src="images/aboutme.jpg"><br>
             <small>※画像がイメージです</small>
           </div>
         </div>
@@ -85,8 +86,8 @@
 
     <section id="gallery">
       <div class="container">
-        <h1 class="title">Gallery</h1>
-        <div id="main-photo">
+        <h1 class="title animate">Gallery</h1>
+        <div id="main-photo" class="animate">
           <img src="images/pic01.jpg"></img>
           <button id="prev" class="hidden">&lt;</button>
           <button id="next">&gt;</button>
@@ -97,10 +98,10 @@
 
     <section id="contact">
       <div class="container">
-        <h1 class="title">Contact me</h1>
+        <h1 class="title animate">Contact me</h1>
         <div class="contact-card">
-          <img src="images/contact.jpeg">
-          <form action="https://formspree.io/f/mayvolzo" method="POST" id="my-form">
+          <img src="images/contact.jpeg" class="animate delay">
+          <form class="animate" action="https://formspree.io/f/mayvolzo" method="POST" id="my-form">
             <div>
               <label for="name">Name</label>
               <input name="name" id="name" type="text">
@@ -119,6 +120,12 @@
     </section>
 
     <footer>
+      <ul id="sns">
+        <li><a href="https://www.instagram.com/" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a></li>
+        <li><a href="https://twitter.com/" target="_blank"><img src="icons/twitter.png" alt="Twitter"></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank"><img src="icons/youtube.png" alt="Youtube"></a></li>
+      </ul>
       <small>©2022 Adam Higa</small>
     </footer>
 
